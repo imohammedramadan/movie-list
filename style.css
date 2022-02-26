@@ -161,9 +161,20 @@ main {
 }
 
 /* cards */
-.movie-cards-grid {
+/* .movie-cards-grid {
   display: flex;
   flex-wrap: wrap;
+  max-width: 62rem;
+  margin: auto;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  padding: 0 0 1rem 0;
+} */
+
+.movie-cards-grid {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
   max-width: 62rem;
   margin: auto;
   column-gap: 4rem;
