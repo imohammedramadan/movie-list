@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Films</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Movie list</h1>
+      <section aria-labelledby="movie-form-heading" class="movie-form-section">
+        <h2 id="movie-form-heading" class="movie-form-heading visually-hidden">
+          Movie submission form
+        </h2>
+        <form action="" class="movie-form">
+          <div class="form-inputs">
+          <label for="title-input" class="visually-hidden">Title</label>
+          <input type="text" id="title-input" class="" placeholder="Title" />
+          <label for="rate-input" class="visually-hidden">Rating</label>
+          <input
+            type="number"
+            id="rate-input"
+            class=""
+            placeholder="Rating"
+            min="0"
+            max="10"
+          />
+          <label for="year-input" class="visually-hidden">Year</label>
+          <input
+            type="number"
+            id="year-input"
+            class=""
+            placeholder="Year"
+            min="1900"
+            max="2050"
+          /></div>
+          <button type="submit" id="btn-movie-form" class="btn-movie-form">Submit</button>
+        </form>
+      </section>
+    </header>
+
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
