@@ -67,6 +67,13 @@ body {
   color: #ffffff;
 }
 
+.btn {
+  background-color: var(--green-100);
+  border: none;
+  border-radius: 5px;
+  color: var(--green-400);
+}
+
 /* header */
 
 header > h1 {
@@ -105,7 +112,6 @@ input {
   font-weight: 300;
   padding: 0.25rem 0.5rem;
   color: var(--green-100);
-  
 }
 
 input:focus {
@@ -122,13 +128,8 @@ input:focus {
 }
 
 .btn-movie-form {
-  background-color: var(--green-100);
-  border: none;
-  border-radius: 5px;
   font-size: 16px;
   font-weight: 700;
-  padding: 0.25rem 0.5rem;
-  color: var(--green-400);
   padding: 0.25rem 6rem;
 }
 /* form end */
@@ -156,6 +157,83 @@ footer > p > a {
 
 /* main */
 main {
-  height: var(--main-size);
+  min-height: var(--main-size);
 }
+
+/* cards */
+.movie-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 62rem;
+  margin: auto;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  padding: 0 0 1rem 0;
+}
+
+.movie-card {
+  border: 1px solid var(--green-200);
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.card-img > img {
+  width: 100px;
+  height: auto;
+}
+
+.card-info {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card-year-rate {
+  display: flex;
+  font-size: 14px;
+  color: var(--green-100);
+}
+
+.card-year {
+  margin-right: 10px;
+}
+
+.card-rate-star {
+  margin-left: 2px;
+}
+
+.card-review-container {
+  padding: 0.25rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.card-review {
+  width: 20ch;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.btn-card-review {
+  font-size: 14px;
+  padding: 0.2rem 0;
+}
+/* cards end */
 /* main end */
