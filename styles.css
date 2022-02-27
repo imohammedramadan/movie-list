@@ -22,6 +22,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  font-family: "Comfortaa", cursive;
 }
 
 body,
@@ -63,7 +64,6 @@ img {
 
 body {
   background-color: var(--green-400);
-  font-family: "Comfortaa", cursive;
   color: #ffffff;
 }
 
@@ -119,6 +119,20 @@ input {
   font-weight: 300;
   padding: 0.25rem 0.5rem;
   color: var(--green-100);
+  width: 250px;
+  
+}
+
+input[type=number]{
+  width: 119px;
+  -moz-appearance: textfield;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  
 }
 
 input:focus {
@@ -200,18 +214,18 @@ main {
   width: fit-content;
 }
 
+.card-img{
+  height: 150px;
+}
+
 .card-img > img {
-  width: 100px;
-  height: auto;
   border-radius: 4px;
 }
 
 .card-info {
-  padding: 5px 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 0.25rem;
+  justify-content: space-between;
 }
 
 .card-title {
