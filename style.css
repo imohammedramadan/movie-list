@@ -166,20 +166,23 @@ main {
   flex-wrap: wrap;
   max-width: 62rem;
   margin: auto;
-  column-gap: 4rem;
-  row-gap: 2rem;
+  gap: 1.5rem;
   padding: 0 0 1rem 0;
+  justify-content: center;
+} 
+
+.movie-cards-grid:last-child{
+  justify-content: flex-start;
 } */
 
 .movie-cards-grid {
   display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, 285px);
   max-width: 62rem;
   margin: auto;
-  column-gap: 4rem;
-  row-gap: 2rem;
+  gap: 1.5rem;
   padding: 0 0 1rem 0;
+  justify-content: center;
 }
 
 .movie-card {
@@ -194,6 +197,7 @@ main {
 .card-img > img {
   width: 100px;
   height: auto;
+  border-radius: 4px;
 }
 
 .card-info {
@@ -220,7 +224,7 @@ main {
 }
 
 .card-rate-star {
-  margin-left: 2px;
+  margin: auto 0px auto 2px;
 }
 
 .card-review-container {
